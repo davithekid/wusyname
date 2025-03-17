@@ -13,7 +13,7 @@
 <body class="h-screen">
 
   <header>
-    <nav class="flex justify-end items-center w-[92%] mx-auto">
+    <nav class="flex justify-center items-center w-[92%] mx-auto ">
       <!-- Logo -->
       <div class="mr-auto">
         <a href="index.html">wusyname<span>.fm</span></a>
@@ -22,9 +22,9 @@
       <div
         class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[15vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-4">
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8">
-          <li><a class="hover:text-gray-600" href="">Musicas</a></li>
-          <li><a class="hover:text-gray-600" href="">Álbuns</a></li>
-          <li><a class="hover:text-gray-600" href="">Perfil</a></li>
+          <li><a class="hover:text-red-600" href="">Home</a></li>
+          <li><a class="hover:text-red-600" href="">Musicas</a></li>
+          <li><a class="hover:text-red-600" href="">Perfil</a></li>
         </ul>
       </div>
 
@@ -35,7 +35,76 @@
     </nav>
   </header>
 
+  <section id="banner">
 
+      <div class="list">
+        <div class="item">
+        <img class="w-full" src="/assets/tyler-banner.jpg" alt="">
+        <div class="content">
+          <div class="autor">Tyler, the creator</div> 
+          <div class="title">IGOR</div> 
+          <div class="topic">ALBUM</div> 
+          <div class="desc">LISTEN NOW</div> 
+        </div>
+        </div>
+      </div>
+
+
+    <!-- <div id="carrossel-top mt-5">
+      <div class="flex">
+        <p class="text-[300px]">1</p>
+        <img class="w-2xs h-100" src="/assets/IAM.webp" width="350" alt="">
+      </div>
+    </div> -->
+
+  </section>
+
+  <section id="conteudo">
+    <div class="module">
+  
+      <h1 class="font-extrabold mt-10"><span>wusyname</span> Top 5 in Brazil</h1>
+      <div class="flex justify-between">
+        <div class="flex mt-3.5" >
+            <p class="text-9xl text-white font-extrabold mt-20">1</p>
+            <img class="w-70 rounded-4xl" id="tyler" src="/assets/chromakopia.jpeg" alt="">
+        
+        </div>
+        <div class="flex mt-3.5">
+          <p class="text-9xl text-white font-extrabold mt-20">2</p>
+          <img class="w-70 rounded-4xl" src="/assets/gnx.png" alt="">
+        </div>
+        <div class="flex mt-3.5">
+          <p class="text-9xl text-white font-extrabold mt-20">3</p>
+          <img class="w-70 rounded-4xl" src="/assets/IAM.webp" alt="">
+        </div>
+        <div class="flex mt-3.5">
+          <p class="text-9xl text-white font-extrabold mt-20">4</p>
+          <img class="w-70 rounded-4xl" src="/assets/ariana.jpg" alt="">
+        </div>
+      </div>
+   
+  </section>
+  <section id="conteudo">
+    <h1 class="font-extrabold mt-10">Top Álbuns</h1>
+    <div class="flex justify-around">
+      <div class="flex mt-3.5">
+
+        <img class="w-70 rounded-4xl" src="/assets/rudies.jpeg" alt="">
+      </div>
+      <div class="flex mt-3.5">
+
+        <img class="w-70 rounded-4xl" src="/assets/nink.jpeg" alt="">
+      </div>
+      <div class="flex mt-3.5">
+
+        <img class="w-70 rounded-4xl" src="/assets/yunk-vino.jpg" alt="">
+      </div>
+      <div class="flex mt-3.5">
+
+        <img class="w-70 rounded-4xl" src="/assets/caOS.jpg" alt="">
+      </div>
+    </div>
+  </section>
 
 
   <!-- script menu -->
@@ -44,8 +113,10 @@
       const navLinks = document.querySelector('.nav-links');
       e.name = e.name === 'menu' ? 'close' : 'menu';
       navLinks.classList.toggle('top-[10%]');
+      navLinks.classList.toggle('bg-[#fff]');
     }
   </script>
+
 </body>
 
 </html>
